@@ -1,0 +1,35 @@
+<div class="container-fluid pt-5">
+  <h1 class="text-center">These are all our wonderful beans</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <ngb-pagination [(page)]="currentPage"
+                          [pageSize]="apiData.pageSize"
+                          [collectionSize]="apiData.totalCount"
+                          (pageChange)="loadBeans()"
+                          [maxSize]="5"
+                          [boundaryLinks]="true"
+                          [ellipses]="true"
+                          [rotate]="true"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="row" style="justify-content: center; align-items: center">
+     @for(bean of beans; track bean.beanId){
+       <div class="col-md-3" style="margin: 15px">
+       <div class="card" [style.background]=" bean.backgroundColor ? bean.backgroundColor : 'white'" routerLink="{{bean.beanId}}">
+         <div class="card-header">
+           {{bean.flavorName}}
+         </div>
+         <div class="card-content" >
+           <img src="{{bean.imageUrl}}" width="175" height="150px"  style="margin-top: 10px">
+         </div>
+       </div>
+       </div>
+     }
+ </div>
+</div>
+

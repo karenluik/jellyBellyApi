@@ -1,0 +1,21 @@
+<div class="container-fluid" [style.background]=" bean.backgroundColor ? bean.backgroundColor : 'white'">
+  @defer (when bean){
+  <div class="row">
+    <div class="col-md-4 m-4">
+      <img src="{{bean.imageUrl}}" alt="{{bean.flavorName}}" class="img-fluid"/>
+    </div>
+    <div class="col-md-3 m-4">
+      <h2>Flavor:</h2>
+      <h3>{{bean.flavorName}}</h3>
+
+      <h2>Ingredients:</h2>
+      <h3>{{bean.ingredients}}</h3>
+    </div>
+    <div class="col-md-3 m-4">
+      <h2>Description:</h2>
+      <h3>{{bean.description}}</h3>
+    </div>
+  </div>
+  }
+</div>
+

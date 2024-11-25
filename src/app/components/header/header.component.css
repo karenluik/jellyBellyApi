@@ -1,0 +1,7 @@
+.navbar-brand:hover {
+  cursor: pointer !important;
+}
+
+.active {
+  color: pink !important;
+}

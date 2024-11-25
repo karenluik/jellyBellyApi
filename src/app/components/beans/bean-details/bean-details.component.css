@@ -1,0 +1,20 @@
+.container-fluid {
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  margin-top: 100px !important;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h3 {
+  justify-content: start;
+  align-items: self-start;
+  text-align: start;
+  font-size: medium;
+  color: white;
+}

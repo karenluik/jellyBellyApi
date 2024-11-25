@@ -1,0 +1,33 @@
+.card-header {
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  transition-duration: 0.4s;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+  transition-duration: 0.6s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 72px;
+  background:linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(205,233,148,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
